@@ -1,3 +1,17 @@
+window.onload = function() {
+  var sidebar = $(".sidebar");
+  var sideBarScrollTop = $(".sidebar").offset().top;
+
+  $(window).scroll(function() {
+    var windowScrollTop = $(window).scrollTop();
+    if (windowScrollTop >= sideBarScrollTop) {
+      sidebar.addClass("fixed");
+    } else {
+      sidebar.removeClass("fixed");
+    }
+  });
+};
+
 var date = new Date();
 var day = date.getDate();
 var month = date.getMonth() + 1;

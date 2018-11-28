@@ -216,10 +216,18 @@ h3 {
     border: 1px solid #3da379; }
 
 .sidebar {
-  width: 300px;
+  width: 30rem;
   margin: 0 auto;
   border: solid 1px #c1c1c1;
   padding: 0.5rem; }
+  @media (min-width: 1024px) {
+    .sidebar {
+      position: absolute;
+      top: 18rem;
+      right: 18.5%; }
+      .sidebar.fixed {
+        position: fixed;
+        top: 0; } }
   .sidebar__img {
     display: block;
     width: 100%;

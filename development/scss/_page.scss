@@ -35,7 +35,6 @@ h3 {
     @include breakpoint(desktopOnly) {
       flex-direction: row;
       justify-content: space-between;
-
     }
   }
 
@@ -109,10 +108,19 @@ h3 {
 }
 
 .sidebar {
-  width: 300px;
+  width: 30rem;
   margin: 0 auto;
   border: solid 1px #c1c1c1;
   padding: 0.5rem;
+  @include breakpoint(desktopOnly) {
+    position: absolute;
+    top: 18rem;
+    right: 18.5%;
+    &.fixed {
+      position: fixed;
+      top: 0;
+    }
+  }
 
   &__img {
     display: block;
@@ -144,6 +152,5 @@ h3 {
     &__p {
       color: #808080;
     }
-
   }
 }
