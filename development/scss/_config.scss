@@ -48,25 +48,26 @@ $container-desk: 1200;
 $site-tab-design: 768;
 $container-tab: 647;
 $site-mob-design: 640;
-$container-mob: 560;
+$container-mob: 600;
 $font-size-base: 10;
 $white: #ffffff;
 $black: #000000;
-$main: #3a444d;
-$promo: #ff0000;
-// $hover: indianred;
+$main: #333333;
+$blue: #428bca;
+$blueActive: #a0c5e4;
 
 
 html,
 body {
   height: 100%;
   width: 100%;
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
   font-style: normal;
   transition: all 0.2s linear;
   background-color: $white;
-  line-height: 1;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
   color: $main;
 }
 
@@ -123,10 +124,6 @@ a {
 }
 
 .text--bold {
-  font-weight: 600;
-}
-
-.text--bolder {
   font-weight: 700;
 }
 
@@ -134,22 +131,18 @@ a {
   text-decoration: underline;
 }
 
-.text--promo {
-  color: $promo;
+.text--blue {
+  color: $blue;
+
+  &:hover {
+    color: $blueActive;
+  }
 }
 
 .text--center {
   text-align: center;
 }
 
-.centered {
+.block--center {
   margin: 0 auto;
 }
-
-.full-width {
-  width: 100%;
-}
-
-// .text--justify {
-//   text-align: justify;
-// }

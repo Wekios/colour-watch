@@ -1,0 +1,149 @@
+h3 {
+  font-weight: 700;
+}
+
+.container {
+  &--inner {
+    width: 100%;
+
+    @include breakpoint(desktopOnly) {
+      width: 66%;
+    }
+  }
+}
+
+.nav {
+  background-color: rgba(52, 74, 95, 1);
+  padding: 1.5rem 0;
+
+  &__text {
+    color: $white;
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.header__ads {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(desktopOnly) {
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+  }
+
+  &--right {
+    display: flex;
+    background: #f2f2f2;
+    flex-direction: column;
+    padding: 3rem;
+
+    @include breakpoint(desktopOnly) {
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    img {
+      width: 10rem;
+
+      @include breakpoint(tabletAndDesktop) {
+        width: 6rem;
+      }
+    }
+  }
+}
+
+.page {
+  &__title {
+    font-size: 2.8rem;
+    color: #0a0001;
+  }
+
+  p,
+  h3,
+  h4,
+  img {
+    margin: 2rem 0;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.section6__module {
+  border: 3px solid #d3d3d3;
+  padding: 2rem;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 4rem;
+}
+
+.btn--gradient {
+  font-size: 2.6rem;
+  line-height: 30px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #2cb179;
+  border: 1px solid #20a56d;
+  text-align: center;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: #49af85;
+    border: 1px solid #3da379;
+  }
+}
+
+.sidebar {
+  width: 300px;
+  margin: 0 auto;
+  border: solid 1px #c1c1c1;
+  padding: 0.5rem;
+
+  &__img {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__promo {
+    background-color: yellow;
+    color: $black;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}
+
+.footer {
+  background: #2e3138;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3rem;
+
+    @include breakpoint(desktopOnly) {
+      flex-direction: row;
+    }
+
+    &__p {
+      color: #808080;
+    }
+
+  }
+}
